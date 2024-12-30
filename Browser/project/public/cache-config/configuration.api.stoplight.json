@@ -1,0 +1,29 @@
+{
+  "_updated": 1728668682644,
+  "LIST_ALL_USER_ORGANIZATION_ENROLLMENTS": {
+    "url": "https://stoplight.io/mocks/twelvefactor-rms/twelvefactor/559831517/enrollments",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/vnd.api+json",
+      "Authorization": "Bearer 123",
+      "Prefer": "code=200"
+    },
+    "params": {
+      "query": { "AVAILABLE_OPTS": ["include", "page[number]", "page[size]"] }
+    },
+    "REQUIRED_VALUES": ["headers.Authorization"]
+  },
+  "LIST_OPEN_COURSES": {
+    "url": "https://stoplight.io/mocks/twelvefactor-rms/twelvefactor/559831517/enrollments",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/vnd.api+json",
+      "Authorization": "Bearer 123",
+      "Prefer": "code=200"
+    },
+    "params": {
+      "query": { "AVAILABLE_OPTS": ["include", "page[number]", "page[size]"] }
+    },
+    "REQUIRED_VALUES": ["headers.Authorization"]
+  }
+}

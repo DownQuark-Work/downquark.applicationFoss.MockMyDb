@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Vendor Modules -->
+    <!-- NOTE: when decisions are made we will import these as dependencies ... doing it via CDN for now for rapid iteration -->
+    <!-- below links to each implementations FULL package of web components -->
+    <!-- Cherry pick individuals when design approved -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+    ></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@telekom/scale-components@3.0.0-beta.56/dist/scale-components/scale-components.esm.js"
+    ></script>
+
+    <!-- One Offs for consideration -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/cardio.js"
+    ></script>
+
+    <!-- TwelveFactor Modules -->
+    <script
+      type="module"
+      src="./tsc/lit/components/templates/layout/template-pagebase"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@telekom/scale-components@3.0.0-beta.56/dist/scale-components/scale-components.css"
+    />
+    <style>
+      :where(html),
+      :root {
+        --twelvefactor-color-blue-dark-brand: #185ba3;
+        --twelvefactor-color-blue-light-brand: #3ba7de;
+        --twelvefactor-color-bluegray-dark: #527fa5;
+        --twelvefactor-color-bluegray-light: #76b7b2;
+        --twelvefactor-color-gray-dark: #708090;
+        --twelvefactor-color-gray-light: #dbdbdb;
+        --twelvefactor-color-blue-status: var(
+          --twelvefactor-color-bluegray-dark
+        );
+        --twelvefactor-color-gray-status: var(--twelvefactor-color-gray-dark);
+        --twelvefactor-color-green-status: #0b8000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <template-pagebase></template-pagebase>
+  </body>
+</html>

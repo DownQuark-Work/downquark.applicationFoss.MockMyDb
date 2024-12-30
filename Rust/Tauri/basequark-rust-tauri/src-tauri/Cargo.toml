@@ -1,0 +1,53 @@
+[workspace]
+resolver = "2"
+members = [
+    # tauri specific
+    "./downquark/build",
+    "./downquark/commands",
+    "./downquark/network",
+    "./downquark/standards",
+    "./downquark/state",
+
+    # network specific
+    "./basequark/enhancements",
+    "./basequark/macros",
+    "./basequark/services",
+    "./basequark/symbols",
+    "./basequark/utils"
+]
+[workspace.package]
+version = "0.4.0-pre-release"
+edition = "2021"
+authors = ["downquark <development.qonsole@downquark.work>"]
+
+[package]
+name = "basequark"
+version = "0.4.0-pre-release"
+description = "Development Qonsole"
+authors = ["mlnck"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant, but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "basequark_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.2", features = ["config-json5"] }
+
+[dependencies]
+tauri = { version = "2.0.6", features = [ "config-json5", "tray-icon", "devtools", "image-ico"] }
+tauri-plugin-shell = "2.0.2"
+serde = { version = "1.0.213", features = ["derive"] }
+serde_json = "1.0.132"
+tokio = "1.41.0"
+
+# workspace dependencies
+build = { path = "./downquark/build"}
+commands = { path = "./downquark/commands" }
+state = { path = "./downquark/state" }
+symbols = { path = "./basequark/symbols" }

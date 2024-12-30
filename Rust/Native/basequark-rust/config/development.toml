@@ -1,0 +1,8 @@
+[devqon]
+debug = true
+
+[devqon.logging]
+level = 'DEBUG'
+
+[devqon.persistence.database.maria.auth]
+user = "root"

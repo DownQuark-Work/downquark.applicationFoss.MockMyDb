@@ -1,0 +1,8 @@
+[basequark]
+debug = true
+
+[basequark.logging]
+level = 'DEBUG'
+
+[basequark.persistence.database.maria.auth]
+user = "root"

@@ -1,0 +1,3 @@
+mod traits {
+    fn internal() {}
+}

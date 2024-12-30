@@ -1,0 +1,21 @@
+[package]
+name = "persistence"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# macros and migrate features will probably be useful down the road. enable if/when needed
+sqlx = { version = "0.8.2", features = [
+                                        "chrono",
+                                        "ipnetwork",
+                                        # "macros", "migrate",
+                                        "mysql",
+                                        "runtime-async-std",
+                                        "tls-rustls",
+                                        ] }
+async-std = { version = "1.7.0", features = ["attributes"]}
+
+macros = { path = "../macros" }

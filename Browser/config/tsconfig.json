@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* DEBUG */
+    //   "explainFiles":true,
+    //   "listEmittedFiles":true,
+    // "listFiles":true,
+    // "traceResolution":true,
+    // // deprecated - good for sanity checks
+    // "experimentalDecorators": true,
+    // "useDefineForClassFields": false,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Building */
+    "outDir": "../project/tsc",
+    "rootDir": "../project/src",
+    "sourceMap": true,
+
+    /* imports */
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "paths": {
+      // "*": ["../dependencies/node_modules/*"]
+    },
+    "plugins": [{ "name": "ts-lit-plugin", "strict": true }],
+    "typeRoots": ["../dependencies/node_modules/@types", "../project/src/types"]
+  },
+  "exclude": [".gitkeep", "../project/**/.gitkeep", "../project/**/**/.gitkeep"],
+  "include": ["../project/src", "../project/__specs__"]
+}

@@ -1,0 +1,48 @@
+[_dq] # required
+application = 'BaseQuark' # must be unique for each application
+root_directory = ['$HOME','.dq'] # name of folder for _all_ applicable DownQuark projects
+# root files will always be the application naming convention specified below preceeded by an underscore
+# e.g. ~/.dq/_dq
+# e.g. ~/.dq/basequark/_basequark
+
+[_dq.repository]
+main = 'https://github.com/DownQuark-Work/downquark.ventureCore.DownQuark'
+conf.url = 'https://raw.githubusercontent.com/DownQuark-Work/downquark.ventureCore.DownQuark/develop/.downquark.products'
+conf.semver_key = 'version.semver'
+
+[basequark] # must be lowercase of application name as a single word with all `/[^a-z]/` removed
+auto_update = true
+debug = false
+
+[basequark.repository]
+main = 'https://raw.githubusercontent.com/DownQuark-Work/downquark.applicationFoss.BaseQuark'
+conf.url = 'https://raw.githubusercontent.com/DownQuark-Work/downquark.applicationFoss.BaseQuark/develop/.downquark.conf'
+conf.semver_key = 'products.0.version.semver.release'
+# conf.semver_key = 'version.semver.release'
+
+[basequark.directory]
+application = ['@directory_parsed','@application']
+# application = ['$RESOURCE','../../..'] # ABOVE is equivalent to the LEFT
+home = ['@_dq','@root_directory','basequark'] # value prepended with `@` means it is referencing keys in this document
+resource = ['@directory_parsed','@resource']
+# resource = ['$RESOURCE'] # ABOVE is equivalent to the LEFT
+
+[basequark.logging]
+level = 'WARN'
+output = ['std.out']
+
+[basequark.persistence.database.arango]
+id = 'ARANGO_DB'
+url = "TODO: arangodb url"
+auth.user = "user"
+auth.pass = "pass"
+auth.additional = ["mock_arango_only_cred","2fa","jwt","etc"]
+
+[basequark.persistence.database.maria]
+id = 'MARIA_DB'
+auth.user = "user"
+auth.pass = "pass"
+auth.additional = []
+connection.host = "localhost"
+connection.port = "3366"
+connection.additional = []

@@ -1,0 +1,3 @@
+mod mechanism {
+  fn internal() {}
+}

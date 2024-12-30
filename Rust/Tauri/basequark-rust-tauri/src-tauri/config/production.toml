@@ -1,0 +1,2 @@
+[basequark.logging]
+output = ['basequark.directory.home','.logs']
