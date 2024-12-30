@@ -1,0 +1,11 @@
+/* TODO: on `build`:
+ * 1. if the recommened extensions are not installed
+ *   - move/leave this folder in root directory
+ *       - `.gitignore` makes sure it is not duplicated in the repo
+ * 2. if extensions are installed
+ *   - delete folder from root directory if it exists
+ *
+ */
+{
+  "recommendations": ["ms-playwright.playwright", "runem.lit-plugin", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+}

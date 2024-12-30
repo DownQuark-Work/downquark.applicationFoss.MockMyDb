@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "heroku-prebuild": "npm install -g pnpm && npm install vite typescript && ./twelvefactor-app.sh install",
+    "heroku-postbuild": "./twelvefactor-app.sh manage dotfile make_keys ACCELERATOR",
+    "heroku-cleanup": "",
+    "start": "./twelvefactor-app.sh run"
+  }
+}

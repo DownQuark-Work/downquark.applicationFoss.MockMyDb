@@ -1,0 +1,44 @@
+version: "3.8"
+
+name: DownQuark-Databases
+
+services:
+  mariadb:
+    image: mariadb:10.6.19
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: root
+    command: --port 3666
+    user: root
+    ports:
+      - "3666:3666"
+    volumes:
+      - mariadb_data:/opt/homebrew/var/mysql
+
+  postgresql:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root # _password
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  arangodb:
+    image: arangodb:latest
+    restart: always
+    environment:
+      ARANGO_ROOT_PASSWORD: root # _password
+    volumes:
+      - arangodb_data:/var/lib/arangodb3
+    ports:
+      - "8529:8529"
+
+volumes:
+  mariadb_data:
+  postgresql_data:
+  arangodb_data:
+  # /opt/homebrew/bin/: /mnt/host_path

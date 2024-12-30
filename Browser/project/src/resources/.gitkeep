@@ -1,0 +1,5 @@
+“A backing service is any service the app consumes over the network as part of its normal operation.”
+
+“Each distinct backing service is a resource”
+
+“Resources can be attached and detached to deploys at will. For example, if the app's database is misbehaving due to a hardware issue, the app's administrator might spin up a new database server restored from a recent backup. The current production database could be detached, and the new database attached -- all without any code changes.”

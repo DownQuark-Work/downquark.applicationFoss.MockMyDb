@@ -1,0 +1,20 @@
+{
+  "name": "Database Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "postgresql", // Choose one of the databases to set as the default service
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["ms-azuretools.vscode-docker", "mhutchie.git-graph"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "forwardPorts": [
+    3666, // MariaDB
+    5432, // PostgreSQL
+    8529 // ArangoDB
+  ]
+}

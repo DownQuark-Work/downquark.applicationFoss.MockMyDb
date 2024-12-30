@@ -1,0 +1,13 @@
+workspaces directory
+
+Depending on the type of build this is where the following directories would be defined:
+- cli
+    - input
+        - commands
+    - output
+- server
+    - services
+- ui
+    - render
+    - logic
+    - etc

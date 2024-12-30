@@ -1,0 +1,9 @@
+build
+config/dotfiles/*.keys
+dependencies/*_modules/
+project/dist
+project/node_modules
+project/package.json
+project/tsc/
+./.vscode
+*venv*

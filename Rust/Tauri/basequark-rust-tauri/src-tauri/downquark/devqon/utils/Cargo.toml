@@ -1,0 +1,18 @@
+[package]
+name = "utils"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.38"
+config = "0.14.1"
+reqwest = { version = "0.12.8", features = ["blocking"] }
+serde = { version = "1.0.213", features = ["derive"] }
+#tauri = { version = "2.0.0", features = [ "config-json5", "tray-icon", "devtools", "image-ico"] }
+toml = "0.8.19"
+
+enhancements = { path = "../enhancements" }
+particle_flows = { path = "../../particle_flows" } # for use with _services_

@@ -1,0 +1,4 @@
+*-lock.yaml
+*.d.ts
+dist
+tsc
