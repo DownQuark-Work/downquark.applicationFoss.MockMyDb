@@ -9,6 +9,7 @@ configDqDb = configuration.DownQuarkDatabaseConfiguration
 
 def required_before_run():
     # currently running it with: `MARIA do query "Query One" "Query Two" "I am frog man!" -D` for development
+    # make sure to mark `basequark-database/python` directory as "Sources Root"
 
     # translate CLI args (if exist) to variables for use with module initializing
     cli_conf_values = cli_args.init_args()
