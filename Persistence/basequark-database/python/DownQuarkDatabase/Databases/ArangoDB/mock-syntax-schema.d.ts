@@ -12,8 +12,8 @@
     1. `$_ON_MOCK_COMPLETE`
 
   1. `$_ACCESSOR`
-    - can only be used at the top level of the other "specialty" keys
       - specifies _quick\_key_ to reference that object
+    - can only be used at the top level of the other "specialty" keys
       - The full name of the "specialty key" (e.g.: `$_ALIAS` and `$_ENUM`) will _always_ work regardless of `$_ACCESSOR` value
   1. `$_ALIAS`
     - can be specified

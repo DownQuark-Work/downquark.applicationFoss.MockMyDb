@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edebe3eb-e16c-4e45-8ca8-5215d892d2d6" name="Changes" comment="" />
+    <list default="true" id="edebe3eb-e16c-4e45-8ca8-5215d892d2d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistence/basequark-database/python/DownQuarkDatabase/Databases/ArangoDB/mock-syntax-schema.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/basequark-database/python/DownQuarkDatabase/Databases/ArangoDB/mock-syntax-schema.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistence/basequark-database/python/DownQuarkDatabase/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/basequark-database/python/DownQuarkDatabase/__main__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
