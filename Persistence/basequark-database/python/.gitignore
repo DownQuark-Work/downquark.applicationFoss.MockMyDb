@@ -1,0 +1,7 @@
+__PYCACHE__/
+*/__PYCACHE__/
+*/**/__PYCACHE__/
+__pycache__/
+*/__pycache__/
+*/**/__pycache__/
+DownQuarkDatabase/Utils/__pycache__/

@@ -1,3 +1,4 @@
+A good first go, but think it can be improved on
 # https://docs.arangodb.com/3.12/arangograph/notebooks/
 # --- The above auto-installs some of the below
 # https://github.com/arangodb/python-arango
@@ -197,7 +198,7 @@
 ### Renders something like below to be implemented
 
 
-# :{
+# PlayerMapEntwinement:{
 #     edge_lookup: "9dc6543d-ac0d-441a-84a5-7c727755afaf",
 #     cost:{ GOLD:13, MP:3 }
 #     acquire:{exp:23,BTREE:9},
@@ -255,3 +256,27 @@
 # }
 #
 # RETURN Skirmishes
+
+
+
+# {
+#   "id": "b028ff9d-2da2-46ad-9e79-43c4ecbc0644",
+#   "name": "33589610",
+#   "generated": {
+#     "on": 1735725196002,
+#     "by": []
+#   },
+#   "adjustments": {
+#     "stats": {
+#       "ATK": -2,
+#       "MP": 2,
+#       "HP": 4,
+#       "DEF": 3
+#     },
+#     "NOTE": "stats object ONLY holds the updated amount for the key that was mutated"
+#   },
+#   "events": {
+#     "entwinements": [],
+#     "scuffles": []
+#   }
+# }
