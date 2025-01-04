@@ -1,3 +1,7 @@
+# REMEMBER!
+## you don't have to make this populate the db - only to return the `json` that will get the job done.
+
+
 /* syntax notes:
   1. There are (currently) 4 reserved "specialty" keys.
     1. `$_ACCESSOR`
