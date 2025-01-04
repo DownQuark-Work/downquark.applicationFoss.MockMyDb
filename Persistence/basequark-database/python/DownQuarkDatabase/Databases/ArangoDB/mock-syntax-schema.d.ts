@@ -189,8 +189,8 @@ const AQL_PROJECT_NAME = {
 //////
 TradingCard:{
   owner_id:<$:PlayerMap[_key]>,
-  lookup:UUID(),
-  name:<fkr:name>, # populated by faker/specified from doc
+  lookup:<fkr.string.uuid>,
+  name:<[<faker:word:adjective>|faker.word.adverb{1}] <faker:word:interjection>>, # populated by faker/specified from doc
   generated: {
     on:<fkr:date:past(years=1)>,
     by:[<$:TradingCard:[_id]{1,5}>]
@@ -218,7 +218,7 @@ TradingCard:{
   },
   Entwinements_PlayerMap:{
     edge_key:<$:$_CURRENT.Entwinements[_key]>
-    lookup:UUID(),
+    lookup:<fkr.string.uuid>,
     $n:'lookups are used for values that may be queried or read by the client',
     cost:<$:@$RANDOM_INVENTORY>,
     acquire:<$:@$RANDOM_INVENTORY>,
