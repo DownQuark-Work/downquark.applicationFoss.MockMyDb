@@ -61,3 +61,5 @@
   - https://github.com/mdipierro/ulid
   - https://crates.io/crates/ulid%20%7C%20https://github.com/dylanhart/ulid-rs
   - https://github.com/lukeed/hexoid
+
+https://huemint.com/website-2/#palette=262422-eec64d-956092-2fad58
