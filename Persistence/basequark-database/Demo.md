@@ -52,6 +52,7 @@
    - (fancy way of saying count the roots on the family tree)
 
 > will decide on [structure](https://www.geeksforgeeks.org/difference-between-star-schema-and-snowflake-schema/)/etc as we go
+- https://www.geeksforgeeks.org/difference-between-snowflake-schema-and-fact-constellation-schema/?ref=ml_lbp
 
 ---
 
