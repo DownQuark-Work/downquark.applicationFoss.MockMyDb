@@ -53,6 +53,7 @@
 
 > will decide on [structure](https://www.geeksforgeeks.org/difference-between-star-schema-and-snowflake-schema/)/etc as we go
 - https://www.geeksforgeeks.org/difference-between-snowflake-schema-and-fact-constellation-schema/?ref=ml_lbp
+- https://www.geeksforgeeks.org/fact-constellation-in-data-warehouse-modelling/ <<
 
 ---
 
