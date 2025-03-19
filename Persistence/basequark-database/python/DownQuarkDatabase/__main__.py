@@ -52,3 +52,7 @@ if __name__ == "__main__":
     print("DB_CONFIG_DEFAULT_VALUES", configuration.DB_CONF)
 
 # https://github.com/faif/python-patterns/blob/master/patterns/behavioral/catalog.py
+
+# This mayhelp with the json schema faker:
+## https://github.com/json-schema-faker/json-schema-faker
+## https://schema.org/docs/schemas.html
